@@ -1,1 +1,3 @@
 # Skill-Assessments
+
+This repository is for skill assessments: languages, git, machine learning, ...
