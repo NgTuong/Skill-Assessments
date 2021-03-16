@@ -65,6 +65,37 @@ NameError: name 'x' is not defined
 ```
 
 #### 2. Build-in function `any()` and `all()` on a list
+`Any` and `All` are two built in provided in python used for successive And/Or.  
+**Any**
++ Return True if any of the items is True. It returns False if empty or all are false.
++ Any can be thought of as sequence of OR operations on privided iterables.
++ It short circuit the execution as soon as the result is known
 
+**Syntax:** any(list of iterables)
+```python
+print(any[False, False, False])
+False
 
+print(any([False, True, False]))
+True
 
+print(any([True, True, True]))
+True
+```
+
+**All**
++ Returns True if all of the items are True(or if the iterable is empty).
++ All can be thought of as a sequence of AND in the provided iterables.
++ It also short circuiut the execution i.e stop the execution as soon as the result is know.
+
+**Syntax:** all(list of iterables)
+```python
+print(all([False, True, False]))
+False
+
+print(all([True, True, True]))
+True
+
+print(all([False, False, False]))
+False
+```
